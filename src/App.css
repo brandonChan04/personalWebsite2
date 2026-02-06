@@ -1,14 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
+:root {
+  --mouse-x: 0px;
+  --mouse-y: 0px;
+}
+
 .App {
   background-color: #ffffff;
   color: #000;
   min-height: 100vh;
-  padding: 40px 20px;
+  padding: 40px 20px 40px 20px;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   transition: background-color 0.3s, color 0.3s;
+  overflow-x: hidden;
+}
+
+.cursor-glow {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(100, 200, 255, 0.4) 0%, rgba(100, 150, 255, 0.3) 15%, rgba(150, 100, 255, 0.2) 30%, rgba(255, 100, 200, 0.15) 45%, transparent 70%);
+  left: var(--mouse-x);
+  top: var(--mouse-y);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+  filter: blur(40px);
+}
+
+.App.dark .cursor-glow {
+  background: radial-gradient(circle, rgba(100, 200, 255, 0.5) 0%, rgba(100, 150, 255, 0.4) 15%, rgba(150, 100, 255, 0.3) 30%, rgba(255, 100, 200, 0.2) 45%, transparent 70%);
 }
 
 .App.dark {
@@ -43,12 +66,12 @@
 .header-controls {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .social-links {
   display: flex;
-  gap: 15px;
+  gap: 7.5px;
   font-size: 16px;
 }
 
@@ -60,6 +83,10 @@
 
 .social-links a:hover {
   opacity: 0.6;
+}
+
+.App.dark .social-links a:not(:first-child) .company-logo {
+  filter: invert(1);
 }
 
 .dark-mode-toggle {
@@ -80,7 +107,7 @@
 }
 
 .portfolio-section h2 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   margin: 0 0 15px 0;
 }
