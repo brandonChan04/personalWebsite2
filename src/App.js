@@ -75,6 +75,9 @@ function App() {
               <div style={{marginLeft: '30px'}}>
                 <p className="sub-entry">↳ Expected Graduation: April 2027</p>
               </div>
+              <div style={{marginLeft: '30px'}}>
+                <p className="sub-entry">↳ 3.92 GPA. Dean's, Principal's honour role</p>
+              </div>
             </div>
           </section>
 
@@ -83,7 +86,7 @@ function App() {
             <div className="entry">
               <p>↳ Machine Learning Software Engineer Intern @ <CompanyLogo src="/logos/canai.png" alt="CanAI Garage" /><strong>CanAI Garage</strong></p>
               <div style={{marginLeft: '30px'}}>
-                <p className="sub-entry">↳ Shipping production ML systems to operationalize LLMs across public-sector workflows</p>
+                <p className="sub-entry">↳ Shipped production ML systems to operationalize LLMs across public-sector workflows</p>
               </div>
             </div>
 
@@ -95,6 +98,9 @@ function App() {
             </div>
             <div className="entry">
               <p>↳ Junior Programmer @ <CompanyLogo src="/logos/lantronix.jpeg" alt="Lantronix" /><strong>Lantronix</strong></p>
+              <div style={{marginLeft: '30px'}}>
+                <p className="sub-entry">↳ Automated Open-Q DK training/testing pipelines, streamlining implementation</p>
+              </div>
             </div>
           </section>
         </main>
