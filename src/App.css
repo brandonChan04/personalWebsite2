@@ -72,7 +72,7 @@
 .social-links {
   display: flex;
   gap: 7.5px;
-  font-size: 16px;
+  align-items: center;
 }
 
 .social-links a {
@@ -89,12 +89,20 @@
   filter: invert(1);
 }
 
+.App.dark .theme-icon {
+  filter: invert(1);
+}
+
+.theme-icon {
+  display: block;
+}
+
+
 .dark-mode-toggle {
   background: none;
   border: none;
   font-size: 20px;
   cursor: pointer;
-  padding: 4px 8px;
   transition: opacity 0.2s;
 }
 
