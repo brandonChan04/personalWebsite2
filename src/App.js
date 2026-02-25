@@ -72,12 +72,12 @@ function App() {
 
           <section className="portfolio-section">
             <h2>◆ Currently:</h2>
-            <div className="entry">
+            {/* <div className="entry">
               <p>↳ Incoming Software Engineer Intern @ <CompanyLogo src="/logos/arista.png" alt="Arista" /><strong>Arista</strong></p>
               <div style={{marginLeft: '30px'}}>
                 <p className="sub-entry">↳ EOS Network Operating Systems Team</p>
               </div>
-            </div>
+            </div> */}
             <div className="entry">
               <p>↳ Computer Science @ <CompanyLogo src="/logos/sfu.jpeg" alt="Simon Fraser University" /><strong>Simon Fraser University</strong></p>
               <div style={{marginLeft: '30px'}}>
