@@ -54,7 +54,7 @@ function App() {
                 <a href="https://www.linkedin.com/in/brandon-chan-a10831165/" title="LinkedIn" target="_blank" rel="noopener noreferrer"><CompanyLogo src="/logos/linkedin.png" alt="LinkedIn" /></a>
                 <a href="https://github.com/brandonChan04" title="Github" target="_blank" rel="noopener noreferrer"><CompanyLogo src="/logos/github.png" alt="Github" /></a>
                 <a href="mailto:bjc19@sfu.ca" title="Email"><CompanyLogo src="/logos/mail.svg" alt="Email" /></a>
-                <a href="/BrandonChanResume.pdf" title="Resume" target="_blank" rel="noopener noreferrer"><CompanyLogo src="/logos/resume.svg" alt="Resume" /></a>
+                <a href="/BrandonChanResume6.pdf" title="Resume" target="_blank" rel="noopener noreferrer"><CompanyLogo src="/logos/resume.svg" alt="Resume" /></a>
                 <button
                   className="dark-mode-toggle"
                   onClick={toggleDarkMode}
