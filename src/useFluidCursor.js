@@ -12,7 +12,7 @@ const initFluidCursor = () => {
     PRESSURE: 0.1,
     PRESSURE_ITERATIONS: 20,
     CURL: 3,
-    SPLAT_RADIUS: 0.55,
+    SPLAT_RADIUS: 0.45,
     SPLAT_FORCE: 7000,
     SHADING: true,
     COLOR_UPDATE_SPEED: 10,
@@ -1130,9 +1130,9 @@ const initFluidCursor = () => {
   }
   function generateColor() {
     let c = HSVtoRGB(Math.random(), 1.0, 1.0);
-    c.r *= 0.15;
-    c.g *= 0.15;
-    c.b *= 0.15;
+    c.r *= 0.7;
+    c.g *= 0.7;
+    c.b *= 0.7;
     return c;
   }
   function HSVtoRGB(h, s, v) {
