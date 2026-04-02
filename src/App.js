@@ -54,7 +54,7 @@ function App() {
                 <a href="https://www.linkedin.com/in/brandon-chan-a10831165/" title="LinkedIn" target="_blank" rel="noopener noreferrer"><CompanyLogo src="/logos/linkedin.png" alt="LinkedIn" /></a>
                 <a href="https://github.com/brandonChan04" title="Github" target="_blank" rel="noopener noreferrer"><CompanyLogo src="/logos/github.png" alt="Github" /></a>
                 <a href="mailto:bjc19@sfu.ca" title="Email"><CompanyLogo src="/logos/mail.svg" alt="Email" /></a>
-                <a href="/BrandonChanResume6.pdf" title="Resume" target="_blank" rel="noopener noreferrer"><CompanyLogo src="/logos/resume.svg" alt="Resume" /></a>
+                <a href="/BrandonChanResume.pdf" title="Resume" target="_blank" rel="noopener noreferrer"><CompanyLogo src="/logos/resume.svg" alt="Resume" /></a>
                 <button
                   className="dark-mode-toggle"
                   onClick={toggleDarkMode}
@@ -72,12 +72,12 @@ function App() {
 
           <section className="portfolio-section">
             <h2>◆ Currently:</h2>
-            {/* <div className="entry">
-              <p>↳ Incoming Software Engineer Intern @ <CompanyLogo src="/logos/arista.png" alt="Arista" /><strong>Arista</strong></p>
+            <div className="entry">
+              <p>↳ Incoming Software Engineer Intern @ <CompanyLogo src="/logos/aws.png" alt="AWS" /><strong>Amazon Web Services</strong></p>
               <div style={{marginLeft: '30px'}}>
-                <p className="sub-entry">↳ EOS Network Operating Systems Team</p>
+                <p className="sub-entry">↳ CloudFront</p>
               </div>
-            </div> */}
+            </div>
             <div className="entry">
               <p>↳ Computer Science @ <CompanyLogo src="/logos/sfu.jpeg" alt="Simon Fraser University" /><strong>Simon Fraser University</strong></p>
               <div style={{marginLeft: '30px'}}>
