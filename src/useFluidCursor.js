@@ -12,7 +12,7 @@ const initFluidCursor = () => {
     PRESSURE: 0.1,
     PRESSURE_ITERATIONS: 20,
     CURL: 3,
-    SPLAT_RADIUS: 0.45,
+    SPLAT_RADIUS: 0.55,
     SPLAT_FORCE: 7000,
     SHADING: true,
     COLOR_UPDATE_SPEED: 10,
