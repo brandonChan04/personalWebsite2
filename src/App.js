@@ -5,10 +5,15 @@ import CompanyLogo from './CompanyLogo';
 
 function App() {
   const [isDark, setIsDark] = useState(false);
+  const [isCursorEnabled, setIsCursorEnabled] = useState(true);
 
   useEffect(() => {
     const savedMode = localStorage.getItem('darkMode') === 'true';
     setIsDark(savedMode);
+    const savedCursorMode = localStorage.getItem('cursorEffectEnabled');
+    if (savedCursorMode !== null) {
+      setIsCursorEnabled(savedCursorMode === 'true');
+    }
   }, []);
 
   useEffect(() => {
@@ -22,8 +27,13 @@ function App() {
   }, []);
 
   useEffect(() => {
-    initFluidCursor();
-  }, []);
+    if (!isCursorEnabled) return undefined;
+
+    const cleanup = initFluidCursor();
+    return () => {
+      if (typeof cleanup === 'function') cleanup();
+    };
+  }, [isCursorEnabled]);
 
 
   const toggleDarkMode = () => {
@@ -32,9 +42,15 @@ function App() {
     localStorage.setItem('darkMode', newMode);
   };
 
+  const toggleCursorEffect = () => {
+    const newCursorMode = !isCursorEnabled;
+    setIsCursorEnabled(newCursorMode);
+    localStorage.setItem('cursorEffectEnabled', newCursorMode);
+  };
+
   return (
     <>
-    <canvas
+    {isCursorEnabled && <canvas
         id="fluid"
         style={{
           position: "fixed",
@@ -44,7 +60,7 @@ function App() {
           pointerEvents: "none",
           zIndex: 9999,
         }}
-      />
+      />}
       <div className={`App ${isDark ? 'dark' : 'light'}`}>
         <main className="portfolio">
           <header className="portfolio-header">
@@ -55,6 +71,17 @@ function App() {
                 <a href="https://github.com/brandonChan04" title="Github" target="_blank" rel="noopener noreferrer"><CompanyLogo src="/logos/github.png" alt="Github" /></a>
                 <a href="mailto:bjc19@sfu.ca" title="Email"><CompanyLogo src="/logos/mail.svg" alt="Email" /></a>
                 <a href="/BrandonChanResume.pdf" title="Resume" target="_blank" rel="noopener noreferrer"><CompanyLogo src="/logos/resume.svg" alt="Resume" /></a>
+                <button
+                  className="dark-mode-toggle"
+                  onClick={toggleCursorEffect}
+                  title="Toggle cursor effect"
+                >
+                  <img
+                    src={isCursorEnabled ? "/logos/flashlight-off.svg" : "/logos/flashlight.svg"}
+                    alt={isCursorEnabled ? "Cursor effect on" : "Cursor effect off"}
+                    className="theme-icon"
+                  />
+                </button>
                 <button
                   className="dark-mode-toggle"
                   onClick={toggleDarkMode}
