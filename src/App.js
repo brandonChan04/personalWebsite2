@@ -100,15 +100,18 @@ function App() {
           <section className="portfolio-section">
             <h2>◆ Currently:</h2>
             <div className="entry">
-              <p>↳ Incoming Software Engineer Intern @ <CompanyLogo src="/logos/aws.png" alt="AWS" /><strong>Amazon Web Services</strong></p>
+              <p>↳ Software Engineer Intern @ <CompanyLogo src="/logos/aws.png" alt="AWS" /><strong>Amazon Web Services</strong></p>
               <div style={{marginLeft: '30px'}}>
-                <p className="sub-entry">↳ CloudFront</p>
+                <p className="sub-entry">↳ CloudFront Control Plane</p>
+              </div>
+              <div style={{marginLeft: '30px'}}>
+                <p className="sub-entry">↳ Shipped edge log infrastructure and evaluated high-cardinality metrics platforms for CloudFront</p>
               </div>
             </div>
             <div className="entry">
               <p>↳ Computer Science @ <CompanyLogo src="/logos/sfu.jpeg" alt="Simon Fraser University" /><strong>Simon Fraser University</strong></p>
               <div style={{marginLeft: '30px'}}>
-                <p className="sub-entry">↳ Expected Graduation: April 2027</p>
+                <p className="sub-entry">↳ Expected Graduation: August 2027</p>
               </div>
               <div style={{marginLeft: '30px'}}>
                 <p className="sub-entry">↳ 3.92 GPA. Dean's, Principal's honour role</p>
