@@ -100,13 +100,7 @@ function App() {
           <section className="portfolio-section">
             <h2>◆ Currently:</h2>
             <div className="entry">
-              <p>↳ Software Engineer Intern @ <CompanyLogo src="/logos/aws.png" alt="AWS" /><strong>Amazon Web Services</strong></p>
-              <div style={{marginLeft: '30px'}}>
-                <p className="sub-entry">↳ CloudFront Control Plane</p>
-              </div>
-              <div style={{marginLeft: '30px'}}>
-                <p className="sub-entry">↳ Shipped edge log infrastructure and evaluated high-cardinality metrics platforms for CloudFront</p>
-              </div>
+              <p>↳ Unemployed</p>
             </div>
             <div className="entry">
               <p>↳ Computer Science @ <CompanyLogo src="/logos/sfu.jpeg" alt="Simon Fraser University" /><strong>Simon Fraser University</strong></p>
@@ -121,6 +115,15 @@ function App() {
 
           <section className="portfolio-section">
             <h2>◆ Previously:</h2>
+            <div className="entry">
+              <p>↳ Software Engineer Intern @ <CompanyLogo src="/logos/aws.png" alt="AWS" /><strong>Amazon Web Services</strong></p>
+              <div style={{marginLeft: '30px'}}>
+                <p className="sub-entry">↳ CloudFront Control Plane</p>
+              </div>
+              <div style={{marginLeft: '30px'}}>
+                <p className="sub-entry">↳ Shipped edge log infrastructure and evaluated high-cardinality metrics platforms for CloudFront</p>
+              </div>
+            </div>
             <div className="entry">
               <p>↳ Machine Learning Software Engineer Intern @ <CompanyLogo src="/logos/canai.png" alt="CanAI Garage" /><strong>CanAI Garage</strong></p>
               <div style={{marginLeft: '30px'}}>
