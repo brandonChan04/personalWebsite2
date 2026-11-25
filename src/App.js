@@ -100,10 +100,19 @@ function App() {
           <section className="portfolio-section">
             <h2>◆ Currently:</h2>
             <div className="entry">
-              <p>↳ Unemployed</p>
+              <p>↳ Unemployed, part time hockey referee</p>
             </div>
             <div className="entry">
-              <p>↳ Computer Science @ <CompanyLogo src="/logos/sfu.jpeg" alt="Simon Fraser University" /><strong>Simon Fraser University</strong></p>
+              <p>↳ Incoming Software Engineer Intern @<CompanyLogo src="/logos/microsoft.png" alt="AWS" /><strong>Microsoft</strong></p>
+              <div style={{marginLeft: '30px'}}>
+                <p className="sub-entry">↳ Microsoft Specialized Cloud (MSC)</p>
+              </div>
+              <div style={{marginLeft: '30px'}}>
+                <p className="sub-entry">↳ Redmond Washington, summer 2027</p>
+              </div>
+            </div>
+            <div className="entry">
+              <p>↳ Computer Science @<CompanyLogo src="/logos/sfu.jpeg" alt="Simon Fraser University" /><strong>Simon Fraser University</strong></p>
               <div style={{marginLeft: '30px'}}>
                 <p className="sub-entry">↳ Expected Graduation: August 2027</p>
               </div>
@@ -116,7 +125,7 @@ function App() {
           <section className="portfolio-section">
             <h2>◆ Previously:</h2>
             <div className="entry">
-              <p>↳ Software Engineer Intern @ <CompanyLogo src="/logos/aws.png" alt="AWS" /><strong>Amazon Web Services</strong></p>
+              <p>↳ Software Engineer Intern @<CompanyLogo src="/logos/aws.png" alt="AWS" /><strong>Amazon Web Services</strong></p>
               <div style={{marginLeft: '30px'}}>
                 <p className="sub-entry">↳ CloudFront Control Plane</p>
               </div>
@@ -125,20 +134,20 @@ function App() {
               </div>
             </div>
             <div className="entry">
-              <p>↳ Machine Learning Software Engineer Intern @ <CompanyLogo src="/logos/canai.png" alt="CanAI Garage" /><strong>CanAI Garage</strong></p>
+              <p>↳ Machine Learning Software Engineer Intern @<CompanyLogo src="/logos/canai.png" alt="CanAI Garage" /><strong>CanAI Garage</strong></p>
               <div style={{marginLeft: '30px'}}>
                 <p className="sub-entry">↳ Shipped production ML systems to operationalize LLMs across public-sector workflows</p>
               </div>
             </div>
 
             <div className="entry">
-              <p>↳ Software Engineer Intern @ <CompanyLogo src="/logos/excelar.png" alt="Excelar" /><strong>Excelar</strong></p>
+              <p>↳ Software Engineer Intern @<CompanyLogo src="/logos/excelar.png" alt="Excelar" /><strong>Excelar</strong></p>
               <div style={{marginLeft: '30px'}}>
                 <p className="sub-entry">↳ Built high-performance data visualizations and AI marketplaces for Careflow at scale</p>
               </div>
             </div>
             <div className="entry">
-              <p>↳ Junior Programmer @ <CompanyLogo src="/logos/lantronix.jpeg" alt="Lantronix" /><strong>Lantronix</strong></p>
+              <p>↳ Junior Programmer @<CompanyLogo src="/logos/lantronix.jpeg" alt="Lantronix" /><strong>Lantronix</strong></p>
               <div style={{marginLeft: '30px'}}>
                 <p className="sub-entry">↳ Automated Open-Q DK training/testing pipelines, streamlining implementation</p>
               </div>
