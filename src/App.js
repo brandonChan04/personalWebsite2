@@ -146,12 +146,6 @@ function App() {
                 <p className="sub-entry">↳ Built high-performance data visualizations and AI marketplaces for Careflow at scale</p>
               </div>
             </div>
-            <div className="entry">
-              <p>↳ Junior Programmer @<CompanyLogo src="/logos/lantronix.jpeg" alt="Lantronix" /><strong>Lantronix</strong></p>
-              <div style={{marginLeft: '30px'}}>
-                <p className="sub-entry">↳ Automated Open-Q DK training/testing pipelines, streamlining implementation</p>
-              </div>
-            </div>
           </section>
         </main>
       </div>
